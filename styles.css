@@ -1,0 +1,50 @@
+:root {
+  --color-bg: #040810;
+  --color-accent: #00ffaa;
+  --color-hint: #ff3366;
+  --font-mono: 'Courier New', monospace;
+  --flash-duration: 0.1s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  font-family: var(--font-mono);
+}
+
+canvas {
+  display: block;
+}
+
+#hint {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--color-hint);
+  font-size: 14px;
+  letter-spacing: 2px;
+  pointer-events: none;
+  user-select: none;
+}
+
+#flash {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  transition: opacity var(--flash-duration);
+}
