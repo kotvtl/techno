@@ -1,1 +1,1 @@
-# https://kotvtl.github.io/techno/techno
+# https://kotvtl.github.io/techno/index
